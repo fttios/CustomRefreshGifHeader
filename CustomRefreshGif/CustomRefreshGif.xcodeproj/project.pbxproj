@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DD585FDB127F24476B36D91 /* libPods-CustomRefreshGif.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B942D89DEC6A0B1204201E /* libPods-CustomRefreshGif.a */; };
 		A28E7B7E1F28309C00FC6126 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A28E7B7D1F28309C00FC6126 /* main.m */; };
 		A28E7B811F28309C00FC6126 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A28E7B801F28309C00FC6126 /* AppDelegate.m */; };
 		A28E7B841F28309C00FC6126 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A28E7B831F28309C00FC6126 /* ViewController.m */; };
@@ -69,6 +70,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		15B942D89DEC6A0B1204201E /* libPods-CustomRefreshGif.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CustomRefreshGif.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28E7B791F28309C00FC6126 /* CustomRefreshGif.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomRefreshGif.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A28E7B7D1F28309C00FC6126 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A28E7B7F1F28309C00FC6126 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -133,6 +135,8 @@
 		A28E7BC71F2830CA00FC6126 /* 心电_9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "心电_9.jpg"; sourceTree = "<group>"; };
 		A28E7BFD1F28315300FC6126 /* ECGCustomGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECGCustomGifHeader.h; sourceTree = "<group>"; };
 		A28E7BFE1F28315300FC6126 /* ECGCustomGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGCustomGifHeader.m; sourceTree = "<group>"; };
+		A9F6B6EA8D31C5941523E20B /* Pods-CustomRefreshGif.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomRefreshGif.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CustomRefreshGif/Pods-CustomRefreshGif.debug.xcconfig"; sourceTree = "<group>"; };
+		D095E2855F522141AE109F26 /* Pods-CustomRefreshGif.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CustomRefreshGif.release.xcconfig"; path = "Pods/Target Support Files/Pods-CustomRefreshGif/Pods-CustomRefreshGif.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,17 +144,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD585FDB127F24476B36D91 /* libPods-CustomRefreshGif.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FDCAD5AE7770A5A660F0954 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9F6B6EA8D31C5941523E20B /* Pods-CustomRefreshGif.debug.xcconfig */,
+				D095E2855F522141AE109F26 /* Pods-CustomRefreshGif.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		883F5179E5B81D017EA18F06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				15B942D89DEC6A0B1204201E /* libPods-CustomRefreshGif.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A28E7B701F28309C00FC6126 = {
 			isa = PBXGroup;
 			children = (
 				A28E7B7B1F28309C00FC6126 /* CustomRefreshGif */,
 				A28E7B7A1F28309C00FC6126 /* Products */,
+				6FDCAD5AE7770A5A660F0954 /* Pods */,
+				883F5179E5B81D017EA18F06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,9 +287,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A28E7B901F28309C00FC6126 /* Build configuration list for PBXNativeTarget "CustomRefreshGif" */;
 			buildPhases = (
+				B82272561D17BA0D00EC7136 /* [CP] Check Pods Manifest.lock */,
 				A28E7B751F28309C00FC6126 /* Sources */,
 				A28E7B761F28309C00FC6126 /* Frameworks */,
 				A28E7B771F28309C00FC6126 /* Resources */,
+				0F25FE838E4FAA58A44B36F9 /* [CP] Embed Pods Frameworks */,
+				B2FE3CF102CC8BAA59431B1F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,6 +314,7 @@
 				TargetAttributes = {
 					A28E7B781F28309C00FC6126 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = GTTGDFQCM8;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -373,6 +401,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F25FE838E4FAA58A44B36F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomRefreshGif/Pods-CustomRefreshGif-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2FE3CF102CC8BAA59431B1F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CustomRefreshGif/Pods-CustomRefreshGif-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CustomRefreshGif/Pods-CustomRefreshGif-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B82272561D17BA0D00EC7136 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CustomRefreshGif-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A28E7B751F28309C00FC6126 /* Sources */ = {
@@ -502,9 +584,12 @@
 		};
 		A28E7B911F28309C00FC6126 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9F6B6EA8D31C5941523E20B /* Pods-CustomRefreshGif.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GTTGDFQCM8;
 				INFOPLIST_FILE = CustomRefreshGif/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xijian.CustomRefreshGif;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,9 +598,12 @@
 		};
 		A28E7B921F28309C00FC6126 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D095E2855F522141AE109F26 /* Pods-CustomRefreshGif.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GTTGDFQCM8;
 				INFOPLIST_FILE = CustomRefreshGif/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xijian.CustomRefreshGif;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -541,6 +629,7 @@
 				A28E7B921F28309C00FC6126 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
